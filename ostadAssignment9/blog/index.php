@@ -17,32 +17,74 @@
 
 
     <!-- ======================blogs start====================== -->
+
     <div class="grid grid-cols-4 pt-10">
         <div class="blog-bg col-span-3">
             <div class="container ps-[5rem]">
-                <div class="columns-1">
-                    <div class="bg-slate-50 rounded mb-3">
-                        <div class="columns-2">
-                            <img src="https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-96 h-[12rem] rounded-tl-lg rounded-bl-lg" alt="">
-                            <div class="pt-8">
-                                <h3 class="capitalize text-lg font-bold">This is first blog</h3>
-                                <span class="me-2 text-sm">Admin</span><span>|</span><span class="ms-2 text-sm">21 May, 2023</span>
-                                <p class="text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, tempore? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-                                <div class="text-right pe-5">
-                                    <a href="../blog/show.php" class="text-sm">Read More <span aria-hidden="true">&rarr;</span></a>
+                <?php
+
+                $blogSql = "SELECT * FROM `blogs`";
+                $query = $conn->query($blogSql);
+                if ($query->num_rows > 0) {
+                    while ($blog = $query->fetch_assoc()) {
+                ?>
+                        <div class="columns-1">
+                            <div class="bg-slate-50 rounded mb-3">
+                                <div class="columns-2">
+                                    <img src="https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-96 h-[12rem] rounded-tl-lg rounded-bl-lg" alt="">
+                                    <div class="pt-8">
+                                        <h3 class="capitalize text-lg font-bold"><?php echo $blog['title'] ?></h3>
+                                        <p class="text-base text-slate-500"><?php echo limit_words($blog["excerpt"], 10) ?></p>
+                                        <div class="text-right pe-5">
+                                            <a href="../blog/show.php" class="text-sm">Read More <span aria-hidden="true">&rarr;</span></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                    <?php
+                    }
+                } else {
+                    ?>
+                    <div class="columns-1">
+                        <div class="bg-slate-50 rounded mb-3">
+                            <div class="columns-1">
+                                <h3 class="capitalize text-lg font-bold text-center">Blog Not Found</h3>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bg-slate-50 rounded">09</div>
-                </div>
+                <?php
+                }
+                ?>
             </div>
         </div>
 
         <?php include_once '../partials/sidebar.php' ?>
     </div>
     <!-- ======================blogs end====================== -->
+    <?php
+    function limit_words($string, $word_limit)
+    {
+        // Split the string into an array of words
+        $words = str_word_count($string, 1);
 
+        // Limit the number of words in the array
+        $limited_words = array_slice($words, 0, $word_limit);
+
+        // Combine the limited words into a string
+        $limited_string = implode(" ", $limited_words);
+
+        // Add an ellipsis if the string was truncated
+        if (count($words) > $word_limit) {
+            $limited_string .= "...";
+        }
+
+        // Return the limited string
+        return $limited_string;
+    }
+
+    ?>
 </body>
 
 </html>
