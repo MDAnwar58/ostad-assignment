@@ -36,7 +36,7 @@
                                         <h3 class="capitalize text-lg font-bold"><?php echo $blog['title'] ?></h3>
                                         <p class="text-base text-slate-500"><?php echo limit_words($blog["excerpt"], 10) ?></p>
                                         <div class="text-right pe-5">
-                                            <a href="../blog/show.php" class="text-sm">Read More <span aria-hidden="true">&rarr;</span></a>
+                                            <a href="../blog/show.php?id=<?php echo $blog['id']; ?>" class="text-sm">Read More <span aria-hidden="true">&rarr;</span></a>
                                         </div>
                                     </div>
                                 </div>
