@@ -105,7 +105,6 @@
         {
             var search_area = document.getElementById('search_button');
             var sidebar_first = document.getElementById('sidebar_first');
-            // search_area.classList.add("hidden");
             search_area.classList.toggle("mb-10");
             sidebar_first.classList.toggle("hidden");
         }
