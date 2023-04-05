@@ -4,8 +4,8 @@ This is a responsive blog site with dynamic.Frontend making in Tailwind css and 
 
 This web site ability:
 
-1. inser blog.
-2. user will see blog recent.
+1. insert blog on blog add page.
+2. user will see recent blog on the home page.
 3. user will see blog details page.
-4. user send contact message.
+4. user send contact message in contact page.
 5. search bar on the blog page.
