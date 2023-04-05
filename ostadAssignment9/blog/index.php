@@ -19,7 +19,12 @@
     <!-- ======================blogs start====================== -->
 
     <div class="grid md:grid-cols-4 grid-cols-1 pt-10">
-        <div class="sidebar px-3 block md:hidden mb-5">
+        <div class="text-center search_button mb-10" id="search_button">
+            <button type="button" class="bg-stone-600 text-white rounded px-3 py-1" onclick="search_button()">
+                Search Bar
+            </button>
+        </div>
+        <div class="sidebar_first w-96 mx-auto hidden mb-5" id="sidebar_first">
             <form action="" method="get">
                 <h4 class="text-slate-400 pb-2">Search Blogs</h4>
                 <input type="text" name="search" class="border-4 border-Slate-400/100 w-[100%] ps-3" placeholder="search....">
@@ -92,6 +97,19 @@
     }
 
     ?>
+
+
+
+    <script>
+        function search_button()
+        {
+            var search_area = document.getElementById('search_button');
+            var sidebar_first = document.getElementById('sidebar_first');
+            // search_area.classList.add("hidden");
+            search_area.classList.toggle("mb-10");
+            sidebar_first.classList.toggle("hidden");
+        }
+    </script>
 </body>
 
 </html>

@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="-mr-2 flex md:hidden">
-        <button type="button" class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+        <button type="button" onclick="manu()" class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <!-- Heroicon name: menu -->
           <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <div class="md:hidden" id="mobile-menu">
+  <div class="hidden manu_bar" id="mobile-menu">
     <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
       <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
 
@@ -41,3 +41,12 @@
     </div>
   </div>
 </nav>
+
+
+<script>
+  function manu()
+  {
+    const mobile_menu = document.getElementById('mobile-menu');
+    mobile_menu.classList.toggle("hidden");
+  }
+</script>
