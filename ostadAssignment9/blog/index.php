@@ -19,7 +19,7 @@
     <!-- ======================blogs start====================== -->
 
     <div class="grid md:grid-cols-4 grid-cols-1 pt-10">
-        <div class="text-center search_button mb-10" id="search_button">
+        <div class="text-center search_button mb-10 md:hidden" id="search_button">
             <button type="button" class="bg-stone-600 text-white rounded px-3 py-1" onclick="search_button()">
                 Search Bar
             </button>
