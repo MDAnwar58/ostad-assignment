@@ -1,6 +1,6 @@
 >>>>ostadAssignment9
 
-This is a responsive blog site with dynamic. It's work on raw php.
+This is a responsive blog site with dynamic.Frontend making in Tailwind css and It's work on raw php. and It's work on raw php.
 
 This web site ability:
 
