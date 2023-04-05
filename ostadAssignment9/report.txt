@@ -1,0 +1,11 @@
+>>>>ostadAssignment9
+
+This is a responsive blog site with dynamic. It's work on raw php.
+
+This web site ability:
+
+1. inser blog.
+2. user will see blog recent.
+3. user will see blog details page.
+4. user send contact message.
+5. search bar on the blog page.
