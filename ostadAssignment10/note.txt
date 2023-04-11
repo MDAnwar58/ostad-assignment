@@ -1,0 +1,17 @@
+I can provide guidance and resources here.
+
+Here are some steps provide:
+
+1. Navigation
+    * provide a logo
+    * provide some manus
+2. Banner area
+    * And then provide a carousel slider
+3. Contact area
+    * provide a contact form
+    * validation required use in the contact form
+
+Here are some resources:
+
+1. working Github Repository: https://github.com/MDAnwar58/ostad-assignment/blob/main/ostadAssignment10/index.php
+2. note Github Repository: https://github.com/MDAnwar58/ostad-assignment/blob/main/ostadAssignment10/note.txt
