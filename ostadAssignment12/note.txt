@@ -1,0 +1,7 @@
+Notes for the project.
+
+1. HTML provides a way to structure content on a webpage using elements such as forms.
+2. CSS is used to style the HTML allowing you to control the layout, colors, fonts of your webpage.
+3. JavaScript is a powerful scripting language that can be used to create dynamic and interactive web pages. In this example, we used JavaScript to add behavior to the "calculateBtn" button, which calculates the BMI based on the user input and displays the result on the page.
+4. The BMI calculator is a common example of how HTML, CSS, and JavaScript can be used together to create a useful web application. It demonstrates how user input can be captured and processed, and how the resulting output can be displayed on the page in a clear and understandable way.
+5. It's important to keep accessibility in mind when creating web applications. In this example, the input fields are labeled with the "for" attribute, which associates them with their respective "id" attributes and makes them accessible to screen readers. Additionally, the CSS styling includes a high contrast color scheme and uses a legible font size to ensure that the content is readable for all users.
