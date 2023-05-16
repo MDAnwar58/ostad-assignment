@@ -1,5 +1,3 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <h1 align="center">ostad_laravel_assignment_13</h1>
 
 ## Project Description:
@@ -37,4 +35,4 @@ The folder structure of this Laravel project is as follows.
 <p align="center"><img src="part2.png" width="400" alt="Laravel Logo"></p>
 
 ## Github Repository Link:
-github link: <a href="https://github.com/MDAnwar58/ostad-assignment/tree/main/ostad_laravel_assignment_13" target="_blank"></a>
+github link: <a href="https://github.com/MDAnwar58/ostad-assignment/tree/main/ostad_laravel_assignment_13" target="_blank">Click Here</a>
